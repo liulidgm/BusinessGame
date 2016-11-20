@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>比赛</title>
+    <link rel="stylesheet" href="../../css/main.css"/>
+</head>
+<body>
+<div class="main">
+    <div class="logout"><a>退出系统</a></div>
+    <div class="menus">
+        <div class="menu-1 cd-popup-trigger0"  data-popup="update_jq_price">
+            <span class="i_wallet"></span>修改机器人价格
+        </div>
+        <div class="menu-2" onclick="start()">
+            <div style="width: 280px;margin: auto;">
+                <button id="statu" class="i_start fl">开始</button>
+                <span style="margin-left: 15px;">第<span id="fiscal_year">1</span>财年</span>
+                <span class="count_down"><span id="XS">42:06</span></span>
+            </div>
+        </div>
+        <div class="menu-3">
+            <span style="float: right;">结束</span><span class="i_end"></span>
+        </div>
+    </div>
+
+    <div class="gov_nav nav_2">
+        <span class="nav_menu active" data-area="log">比赛日志</span>
+        <span class="nav_menu" data-area="asset">队伍资产</span>
+    </div>
+    <div id="log" class="content" style="height: 430px;">
+        <div class="top">
+            <div class="title">
+                比赛日志
+            </div>
+            <div class="list game_log">
+                <ul class="tabs">
+                    <li class="active"><a href="#tab1">酒馆</a></li>
+                    <li><a href="#tab2">经营</a></li>
+                    <li><a href="#tab3">交易</a></li>
+                </ul>
+                <div class="tab_container">
+                    <div id="tab1" class="tab_content" style="display: block; ">
+                        <div class="msg_list">
+                            <div class="msg">
+                                <div class="msg_detail">
+                                    <p>
+                                        <span class="msg_tag">运营</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                    </p>
+                                </div>
+                                <div class="msg_time">第一财年 17:26</div>
+                            </div>
+                            <div class="msg">
+                                <div class="msg_detail">
+                                    <p>
+                                        <span class="msg_tag">交易</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                    </p>
+                                </div>
+                                <div class="msg_time">第一财年 17:26</div>
+                            </div>
+                            <div class="msg">
+                                <div class="msg_detail">
+                                    <p>
+                                        <span class="msg_tag">酒馆</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                    </p>
+                                </div>
+                                <div class="msg_time">第一财年 17:26</div>
+                            </div>
+                            <div class="msg">
+                                <div class="msg_detail">
+                                    <p>
+                                        <span class="msg_tag">运营</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                    </p>
+                                </div>
+                                <div class="msg_time">第一财年 17:26</div>
+                            </div>
+                            <div class="msg">
+                                <div class="msg_detail">
+                                    <p>
+                                        <span class="msg_tag">交易</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                    </p>
+                                </div>
+                                <div class="msg_time">第一财年 17:26</div>
+                            </div>
+                            <div class="msg">
+                                <div class="msg_detail">
+                                    <p>
+                                        <span class="msg_tag">酒馆</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                    </p>
+                                </div>
+                                <div class="msg_time">第一财年 17:26</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab2" class="tab_content" style="display: none; ">
+                        <div class="msg_list">
+                            <div class="msg">
+                                <div class="msg_detail">
+                                    <p>
+                                        <span class="msg_tag">运营</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                    </p>
+                                </div>
+                                <div class="msg_time">第一财年 17:26</div>
+                            </div>
+                            <div class="msg">
+                                <div class="msg_detail">
+                                    <p>
+                                        <span class="msg_tag">交易</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                    </p>
+                                </div>
+                                <div class="msg_time">第一财年 17:26</div>
+                            </div>
+                            <div class="msg">
+                                <div class="msg_detail">
+                                    <p>
+                                        <span class="msg_tag">酒馆</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                    </p>
+                                </div>
+                                <div class="msg_time">第一财年 17:26</div>
+                            </div>
+                            <div class="msg">
+                                <div class="msg_detail">
+                                    <p>
+                                        <span class="msg_tag">运营</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                    </p>
+                                </div>
+                                <div class="msg_time">第一财年 17:26</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab_content" style="display: none; ">
+                        <div class="msg_list">
+                            <div class="msg">
+                                <div class="msg_detail">
+                                    <p>
+                                        <span class="msg_tag">运营</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        <span class="common_border">同意</span><span class="common_border">拒绝</span>
+                                    </p>
+                                </div>
+                                <div class="msg_time">第一财年 17:26</div>
+                            </div>
+                            <div class="msg">
+                                <div class="msg_detail">
+                                    <p>
+                                        <span class="msg_tag">交易</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                    </p>
+                                </div>
+                                <div class="msg_time">第一财年 17:26</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="send_msg">
+            <textarea class="fl"></textarea>
+            <button class="fl">发送</button>
+        </div>
+    </div>
+    <div id="asset" class="content" style="display: none;">
+        <div class="top">
+            <div class="title">
+                参赛队伍资产
+            </div>
+            <div class="list industry" style="height:350px;overflow-y: scroll">
+                <div class="industry_item">
+                    <div class="industry_title">采矿行业</div>
+                    <div>
+                        <table  cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th class="th1">队伍名</th>
+                                    <th class="th2">用户名</th>
+                                    <th class="th3">资产</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="cd-popup-trigger0" data-popup="mine_popup" data-name="采矿行业队伍名可能很长哦的资产"><td class="td1">队伍名可能很长哦</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                                <tr class="cd-popup-trigger0" data-popup="mine_popup" data-name="采矿行业队伍2的资产"><td class="td1">队伍名2</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                                <tr class="cd-popup-trigger0" data-popup="mine_popup" data-name="采矿行业队伍名可能很长哦的资产"><td class="td1">队伍名可能很长哦</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                                <tr class="cd-popup-trigger0" data-popup="mine_popup" data-name="采矿行业队伍名可能很长哦的资产"><td class="td1">队伍名可能很长哦</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                                <tr class="cd-popup-trigger0" data-popup="mine_popup" data-name="采矿行业队伍名可能很长哦的资产"><td class="td1">队伍名可能很长哦</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                                <tr class="no_border cd-popup-trigger0" data-popup="mine_popup" data-name="采矿行业队伍名可能很长哦的资产"><td class="td1">队伍名可能很长哦</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                                <tr class="cd-popup-trigger0" data-popup="mine_popup" data-name="采矿行业队伍名可能很长哦的资产"><td class="td1">队伍名可能很长哦</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                                <tr class="cd-popup-trigger0" data-popup="mine_popup" data-name="采矿行业队伍2的资产"><td class="td1">队伍名2</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                                <tr class="cd-popup-trigger0" data-popup="mine_popup" data-name="采矿行业队伍名可能很长哦的资产"><td class="td1">队伍名可能很长哦</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                                <tr class="cd-popup-trigger0" data-popup="mine_popup" data-name="采矿行业队伍名可能很长哦的资产"><td class="td1">队伍名可能很长哦</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                                <tr class="cd-popup-trigger0" data-popup="mine_popup" data-name="采矿行业队伍名可能很长哦的资产"><td class="td1">队伍名可能很长哦</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                                <tr class="no_border cd-popup-trigger0" data-popup="mine_popup" data-name="采矿行业队伍名可能很长哦的资产"><td class="td1">队伍名可能很长哦</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                                <tr class="cd-popup-trigger0" data-popup="mine_popup" data-name="采矿行业队伍名可能很长哦的资产"><td class="td1">队伍名可能很长哦</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                                <tr class="cd-popup-trigger0" data-popup="mine_popup" data-name="采矿行业队伍2的资产"><td class="td1">队伍名2</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                                <tr class="cd-popup-trigger0" data-popup="mine_popup" data-name="采矿行业队伍名可能很长哦的资产"><td class="td1">队伍名可能很长哦</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                                <tr class="cd-popup-trigger0" data-popup="mine_popup" data-name="采矿行业队伍名可能很长哦的资产"><td class="td1">队伍名可能很长哦</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                                <tr class="cd-popup-trigger0" data-popup="mine_popup" data-name="采矿行业队伍名可能很长哦的资产"><td class="td1">队伍名可能很长哦</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                                <tr class="no_border cd-popup-trigger0" data-popup="mine_popup" data-name="采矿行业队伍名可能很长哦的资产"><td class="td1">队伍名可能很长哦</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="industry_item">
+                    <div class="industry_title">加工行业</div>
+                    <div>
+                        <table  cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th class="th1">队伍名</th>
+                                    <th class="th2">用户名</th>
+                                    <th class="th3">资产</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="td3 cd-popup-trigger0" data-popup="work_popup" data-name="加工行业队伍名可能很长哦名可能很长哦的资产"><td class="td1">队伍名可能很长哦名可能很长哦</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                                <tr class="no_border cd-popup-trigger0" data-popup="work_popup" data-name="加工行业队伍名可能很长哦的资产"><td class="td1">队伍名可能很长哦</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="industry_item">
+                    <div class="industry_title">制造行业</div>
+                    <div>
+                        <table  cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th class="th1">队伍名</th>
+                                    <th class="th2">用户名</th>
+                                    <th class="th3">资产</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="cd-popup-trigger0" data-popup="make_popup" data-name="制造行业名可能很长哦名可能很长哦名可能很长哦的资产"><td class="td1">名可能很长哦名可能很长哦名可能很长哦</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                                <tr class="no_border cd-popup-trigger0" data-popup="make_popup" data-name="制造行业队伍名可能很长哦的资产"><td class="td1">队伍名可能很长哦</td><td class="td2">user-301-A</td><td class="td3">123456</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--弹框-->
+<!--修改机器人价格-->
+<div class="cd-popup update_jq_price">
+    <div class="cd-popup-container" style="width: 700px;margin-top: 20px;">
+        <div class='p_title update_jq'>修改机器人价格</div>
+        <div class="industry" style="margin: 0;">
+                <div class="industry_item">
+                    <div class="industry_title update_jq_title">战争机器人</div>
+                    <div>
+                        <table  cellpadding="0" cellspacing="0">
+                            <thead class="update_jq_thead">
+                            <tr>
+                                <th class="th1">等级</th>
+                                <th class="th2">价格</th>
+                            </tr>
+                            </thead>
+                            <tbody class="update_jq_tr">
+                            <tr><td class="td1">A1</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">B1</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">C1</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">D1</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">A2</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">B2</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">C2</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">D2</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">A3</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">B3</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">C3</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">D3</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">A4</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">B4</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">C4</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">D4</td><td class="td2"><span class="number">5000</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="industry_item">
+                    <div class="industry_title update_jq_title">医疗机器人</div>
+                    <div>
+                        <table  cellpadding="0" cellspacing="0">
+                            <thead class="update_jq_thead">
+                            <tr>
+                                <th class="th1">等级</th>
+                                <th class="th2">价格</th>
+                            </tr>
+                            </thead>
+                            <tbody class="update_jq_tr">
+                            <tr><td class="td1">A1</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">B1</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">C1</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">D1</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">A2</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">B2</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">C2</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">D2</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">A3</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">B3</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">C3</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">D3</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">A4</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">B4</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">C4</td><td class="td2"><span class="number">5000</span></td></tr>
+                            <tr><td class="td1">D4</td><td class="td2"><span class="number">5000</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="industry_item">
+                    <div class="industry_title update_jq_title">工程机器人</div>
+                    <div>
+                        <table  cellpadding="0" cellspacing="0">
+                            <thead class="update_jq_thead">
+                            <tr>
+                                <th class="th1">等级</th>
+                                <th class="th2">价格</th>
+                            </tr>
+                            </thead>
+                            <tbody class="update_jq_tr">
+                                <tr><td class="td1">A1</td><td class="td2"><span class="number">5000</span></td></tr>
+                                <tr><td class="td1">B1</td><td class="td2"><span class="number">5000</span></td></tr>
+                                <tr><td class="td1">C1</td><td class="td2"><span class="number">5000</span></td></tr>
+                                <tr><td class="td1">D1</td><td class="td2"><span class="number">5000</span></td></tr>
+                                <tr><td class="td1">A2</td><td class="td2"><span class="number">5000</span></td></tr>
+                                <tr><td class="td1">B2</td><td class="td2"><span class="number">5000</span></td></tr>
+                                <tr><td class="td1">C2</td><td class="td2"><span class="number">5000</span></td></tr>
+                                <tr><td class="td1">D2</td><td class="td2"><span class="number">5000</span></td></tr>
+                                <tr><td class="td1">A3</td><td class="td2"><span class="number">5000</span></td></tr>
+                                <tr><td class="td1">B3</td><td class="td2"><span class="number">5000</span></td></tr>
+                                <tr><td class="td1">C3</td><td class="td2"><span class="number">5000</span></td></tr>
+                                <tr><td class="td1">D3</td><td class="td2"><span class="number">5000</span></td></tr>
+                                <tr><td class="td1">A4</td><td class="td2"><span class="number">5000</span></td></tr>
+                                <tr><td class="td1">B4</td><td class="td2"><span class="number">5000</span></td></tr>
+                                <tr><td class="td1">C4</td><td class="td2"><span class="number">5000</span></td></tr>
+                                <tr><td class="td1">D4</td><td class="td2"><span class="number">5000</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+        </div>
+        <div class="sub_btn">提交</div>
+        <a href="#0" class="cd-popup-close i_close_btn"></a>
+    </div>
+</div>
+<!--采矿行业-->
+<div class="cd-popup mine_popup">
+    <div class="cd-popup-container" style="width: 700px;margin-top: 20px;">
+        <div class='p_title'>采矿业XXXX的资产</div>
+        <div class="mine_content">
+            <div class="top">
+                <div class="fl col"><span class="i_coin"></span>可用&nbsp;:&nbsp;1000</div>
+                <div class="fl col"><span class="i_coin"></span>流动资金&nbsp;:&nbsp;1000</div>
+                <div class="fl col"><span class="i_upgrade"></span>铁匠铺等级&nbsp;:&nbsp;1级</div>
+            </div>
+            <div class="mid">
+                <div class="fl"><span class="i_mineral_b mine_title"></span>矿石&nbsp;:</div>
+                <div class="fl mr55"><span class="db">矿石A</span><span class="i_mineral_a"></span><span class="db">400</span></div>
+                <div class="fl mr55"><span class="db">矿石B</span><span class="i_mineral_b"></span><span class="db">300</span></div>
+                <div class="fl mr55"><span class="db">矿石C</span><span class="i_mineral_c"></span><span class="db">200</span></div>
+                <div class="fl mr55"><span class="db">矿石D</span><span class="i_mineral_d"></span><span class="db">100</span></div>
+            </div>
+            <div class="bot">
+                <div class="fl mr15"><span class="i_land"></span>地块&nbsp;:</div>
+                <div class="fl lands">
+                    <span class="land_position mr10" data-id="1223">12,23
+                        <span id="1223" class="land_detail">
+                            <span>MaxA:300</span>
+                            <span>MaxB:200</span>
+                            <span>MaxC:200</span>
+                            <span>MaxD:100</span>
+                        </span>
+                    </span>
+                    <span class="land_position mr10" data-id="1234">
+                        12,34
+                         <span id="1234" class="land_detail">
+                            <span>MaxA:300</span>
+                            <span>MaxB:200</span>
+                            <span>MaxC:200</span>
+                            <span>MaxD:100</span>
+                        </span>
+                    </span>
+                     <span class="land_position mr10">
+                        600,600
+                         <span class="land_detail">
+                            <span>MaxA:300</span>
+                            <span>MaxB:200</span>
+                            <span>MaxC:200</span>
+                            <span>MaxD:100</span>
+                        </span>
+                    </span>
+                    <span class="land_position mr10">12,23</span>
+                    <span class="land_position mr10">12,23</span>
+                    <span class="land_position mr10">12,23</span>
+                    <span class="land_position mr10">12,23</span>
+                    <span class="land_position mr10">12,23</span>
+                    <span class="land_position mr10">12,23</span>
+                    <span class="land_position mr10">12,23</span>
+                    <span class="land_position mr10">12,23</span>
+                    <span class="land_position mr10">12,23</span>
+                    <span class="land_position mr10">
+                        12,23
+                        <span class="land_detail">
+                            <span>MaxA:300</span>
+                            <span>MaxB:200</span>
+                            <span>MaxC:200</span>
+                            <span>MaxD:100</span>
+                        </span>
+                    </span>
+                    <span class="land_position mr10" data-id="3489">
+                        12,23
+                        <span id="3489" class="land_detail">
+                            <span>MaxA:300</span>
+                            <span>MaxB:200</span>
+                            <span>MaxC:200</span>
+                            <span>MaxD:100</span>
+                        </span>
+                    </span>
+                    <span class="land_position mr10" data-id="6723">
+                        67,23
+                        <span id="6723" class="land_detail">
+                            <span>MaxA:300</span>
+                            <span>MaxB:200</span>
+                            <span>MaxC:200</span>
+                            <span>MaxD:100</span>
+                        </span>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+        <a href="#0" class="cd-popup-close i_close_btn"></a>
+    </div>
+</div>
+<!--加工行业-->
+<div class="cd-popup work_popup">
+    <div class="cd-popup-container" style="width: 700px;margin-top: 20px;min-height: 545px;">
+        <div class='p_title'>加工业XXXX的资产</div>
+        <div class="mine_content">
+            <div class="top">
+                <div class="fl col"><span class="i_coin"></span>可用资金&nbsp;:&nbsp;1000</div>
+                <div class="fl col"><span class="i_coin"></span>流动资金&nbsp;:&nbsp;1000</div>
+                <div class="fl col"><span class="i_upgrade"></span>铁匠铺等级&nbsp;:&nbsp;1级</div>
+            </div>
+            <div class="mid">
+                <div class="fl"><span class="i_mineral_b mine_title"></span>矿石&nbsp;:</div>
+                <div class="fl mr55"><span class="db">矿石A</span><span class="i_mineral_a"></span><span class="db">400</span></div>
+                <div class="fl mr55"><span class="db">矿石B</span><span class="i_mineral_b"></span><span class="db">300</span></div>
+                <div class="fl mr55"><span class="db">矿石C</span><span class="i_mineral_c"></span><span class="db">200</span></div>
+                <div class="fl mr55"><span class="db">矿石D</span><span class="i_mineral_d"></span><span class="db">100</span></div>
+            </div>
+            <div class="bot">
+                <div class="fl mr15 lh28"><span class="i_parts"></span>零件&nbsp;:</div>
+                <div class="fl robot_content">
+                    <div class="top">
+                        <div class="fl full">
+                            <img width="35" src="../../images/robot_war.png">
+                            <span class="db">战争机器人</span>
+                        </div>
+                        <div class="fl part">
+                            <img width="56" src="../../images/robot_war1.png">
+                            <span class="db">头部（20）</span>
+                        </div>
+                        <div class="fl part">
+                            <img width="30" src="../../images/robot_war2.png">
+                            <span class="db">躯干（5）</span>
+                        </div>
+                        <div class="fl part">
+                            <img width="17" src="../../images/robot_war3.png">
+                            <span class="db">四肢（23）</span>
+                        </div>
+                    </div>
+                    <div class="mid">
+                        <div class="fl full">
+                            <img width="55" src="../../images/robot_engineer.png">
+                            <span class="db">工程机器人</span>
+                        </div>
+                        <div class="fl part">
+                            <img width="56" src="../../images/robot_engineer1.png">
+                            <span class="db">头部（20）</span>
+                        </div>
+                        <div class="fl part">
+                            <img width="30" src="../../images/robot_engineer2.png">
+                            <span class="db">躯干（5）</span>
+                        </div>
+                        <div class="fl part">
+                            <img width="17" src="../../images/robot_engineer3.png">
+                            <span class="db">四肢（23）</span>
+                        </div>
+                    </div>
+                    <div class="bot">
+                        <div class="fl full">
+                            <img width="55" src="../../images/robot_medical.png">
+                            <span class="db">医疗机器人</span>
+                        </div>
+                        <div class="fl part">
+                            <img width="56" src="../../images/robot_medical1.png">
+                            <span class="db">头部（20）</span>
+                        </div>
+                        <div class="fl part">
+                            <img width="30" src="../../images/robot_medical2.png">
+                            <span class="db">躯干（5）</span>
+                        </div>
+                        <div class="fl part">
+                            <img width="17" src="../../images/robot_medical3.png">
+                            <span class="db">四肢（23）</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <a href="#0" class="cd-popup-close i_close_btn"></a>
+    </div>
+</div>
+<!--制造行业-->
+<div class="cd-popup make_popup">
+    <div class="cd-popup-container" style="width: 700px;margin-top: 20px;min-height: 545px;">
+        <div class='p_title'>制造业XXXX的资产</div>
+        <div class="mine_content">
+            <div class="top">
+                <div class="fl col"><span class="i_coin"></span>可用资金&nbsp;:&nbsp;1000</div>
+                <div class="fl col"><span class="i_coin"></span>流动资金&nbsp;:&nbsp;1000</div>
+            </div>
+            <div class="mid">
+                <div class="fl">机器人&nbsp;:</div>
+                <div class="fl ps_re">
+                    <img width="73" src="../../images/robot_war.png">
+                    <span class="db robot">战争机器人（20）</span>
+                    <div class="ps_ab show_robot_num">
+                        <div>A1:数量20</div>
+                        <div>A2:数量20</div>
+                        <div>A3:数量20</div>
+                        <div>A4:数量20</div>
+                    </div>
+                </div>
+                <div class="fl ps_re">
+                    <img width="111" src="../../images/robot_engineer.png">
+                    <span class="db robot">工程机器人（30）</span>
+                    <div class="ps_ab show_robot_num">
+                        <div>A1:数量20</div>
+                        <div>A2:数量20</div>
+                        <div>A3:数量20</div>
+                        <div>A4:数量20</div>
+                    </div>
+                </div>
+                <div class="fl ps_re">
+                    <img width="105" src="../../images/robot_medical.png">
+                    <span class="db robot">医疗机器人（10）</span>
+                    <div class="ps_ab show_robot_num">
+                        <div>A1:数量20</div>
+                        <div>A2:数量20</div>
+                        <div>A3:数量20</div>
+                        <div>A4:数量20</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bot">
+                <div class="fl mr15 lh28">零件&nbsp;:</div>
+                <div class="fl">
+                    <table>
+                        <tr><td></td><td>头部</td><td>躯干</td><td>四肢</td></tr>
+                        <tr><td>战争机器人</td><td>20</td><td>34</td><td>0</td></tr>
+                        <tr><td>工程机器人</td><td>34</td><td>12</td><td>89</td></tr>
+                        <tr><td>医疗机器人</td><td>5</td><td>67</td><td>8</td></tr>
+
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <a href="#0" class="cd-popup-close i_close_btn"></a>
+    </div>
+</div>
+<script src="../../js/jquery-1.11.1.min.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/gov.js"></script>
+<script>
+    $(document).ready(function() {
+        //Default Action
+        $(".tab_content").hide(); //Hide all content
+        $("ul.tabs li:first").addClass("active").show(); //Activate first tab
+        $(".tab_content:first").show(); //Show first tab content
+
+        //On Click Event
+        $("ul.tabs li").click(function() {
+            $("ul.tabs li").removeClass("active"); //Remove any "active" class
+            $(this).addClass("active"); //Add "active" class to selected tab
+            $(".tab_content").hide(); //Hide all tab content
+            var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+            $(activeTab).fadeIn(); //Fade in the active content
+            return false;
+        });
+        $(".update_jq_tr .number").on("click",function(){
+            $($(this).parent()).html('<input style="width:60px;height:9px;" value="'+$(this).html()+'"/>');
+            //$(this).removeClass('td2');
+        })
+        $(".robot").on("click",function(){
+           if($($(this).next()).is(":hidden")){
+               for(var i=0;i<$(".show_robot_num").length;i++){
+                   $($(".show_robot_num")[i]).css("display","none");
+               }
+               $($(this).next()).css("display","block");
+           }else{
+               $($(this).next()).css("display","none");
+           }
+        })
+        $(".land_position").on("click",function(){
+                var landId = $(this).data("id");
+            if($("#"+landId).is(":hidden")){
+                for(var i=0;i<$(".land_detail").length;i++){
+                    $($(".land_detail")[i]).css("display","none");
+                }
+                $("#"+landId).css("display","block");
+            }else{
+                $("#"+landId).css("display","none");
+            }
+
+        });
+        $(".nav_2 .nav_menu").on("click",function(){
+            var area = $(this).data('area');
+            for(var i=0;i<$(this).siblings().length;i++){
+                $($(this).siblings()[i]).removeClass("active");
+            }
+            for(var i=0;i<$('.content').length;i++){
+                $($('.content')[i]).css("display","none");
+            }
+            $(this).addClass("active");
+            $("#"+area).css("display","block");
+        })
+    });
+  /*  function change(str){
+        if('asset'==str){
+            $("#asset").css("display","block");
+            $("#log").css("display","none");
+        }else{
+            $("#asset").css("display","none");
+            $("#log").css("display","block");
+        }
+    }*/
+</script>
+</body>
+</html>

@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>加工业</title>
+    <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+<div class="main">
+    <div class="logout"><a>退出系统</a></div>
+    <div class="menus lh40">
+        <div class="menu-1">
+            <!--<span class="i_wallet"></span>修改机器人价格-->
+        </div>
+        <div class="menu-2 player">
+            <span>即将进入第一财年</span>
+        </div>
+        <div class="menu-3">
+            <!--结束-->
+        </div>
+    </div>
+    <div class="nav nav_3">
+        <span class="nav_menu active" data-area="workshop">加工车间</span>
+        <span class="nav_menu" data-area="asset">固定资产</span>
+        <span class="nav_menu" data-area="blacksmith">铁匠铺</span>
+    </div>
+    <div class="content">
+        <div class="item mr10 item_left ps_re" style="width: 565px;">
+            <div class="area workshop">
+                <div class="war work_robot">
+                    <div class="fl full b_inherit">
+                        <img width="90" src="../images/robot_war.png">
+                    </div>
+                    <div class="fl part">
+                        <div class="fl padding20">
+                            <div class="war_head b_inherit">
+                                <img width="55" src="../images/robot_war1.png">
+                            </div>
+                            <span class="db tc pd3">头部</span>
+                            <div class="work_btn">
+                                <button class="i_work_btn">加工</button>
+                            </div>
+                        </div>
+                        <div class="fl" style="width: 90px;margin-left: 10px;">
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_a.png">
+                                    <span class="mineral_num">5(<span class="c_red">4</span>)</span>
+                                </div>
+                                <span class="pd3">矿石A</span>
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_c.png">
+                                    <span class="mineral_num">5(<span class="c_green">14</span>)</span>
+                                </div>
+                                <span class="pd3">矿石C</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_d.png">
+                                    <span class="mineral_num">5(<span class="c_green">23</span>)</span>
+                                </div>
+                                <span class="pd3">矿石D</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl part">
+                        <div class="fl padding20">
+                            <div class="war_head b_inherit">
+                                <img width="30" src="../images/robot_war2.png">
+                            </div>
+                            <span class="db tc pd3">躯干</span>
+                            <div class="work_btn">
+                                <button class="i_work_btn">加工</button>
+                            </div>
+                        </div>
+                        <div class="fl" style="width: 90px;margin-left: 10px;">
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_c.png">
+                                    <span class="mineral_num">1(<span class="c_green">4</span>)</span>
+                                </div>
+                                <span class="pd3">矿石C</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_d.png">
+                                    <span class="mineral_num">6(<span class="c_green">12</span>)</span>
+                                </div>
+                                <span class="pd3">矿石D</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl part">
+                        <div class="fl padding20">
+                            <div class="war_head b_inherit">
+                                <img width="16" src="../images/robot_war3.png">
+                            </div>
+                            <span class="db tc pd3">四肢</span>
+                            <div class="work_btn">
+                                <button class="i_work_btn">加工</button>
+                            </div>
+                        </div>
+                        <div class="fl" style="width: 90px;margin-left: 10px;">
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_a.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石A</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_b.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石B</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_c.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石C</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_d.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石D</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="engineer work_robot">
+                    <div class="fl full b_inherit">
+                        <img class="mt25" width="90" src="../images/robot_engineer.png">
+                    </div>
+                    <div class="fl part">
+                        <div class="fl padding20">
+                            <div class="war_head b_inherit">
+                                <img width="55" src="../images/robot_engineer1.png">
+                            </div>
+                            <span class="db tc pd3">头部</span>
+                            <div class="work_btn">
+                                <button class="i_work_btn">加工</button>
+                            </div>
+                        </div>
+                        <div class="fl" style="width: 90px;margin-left: 10px;">
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_a.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石A</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_b.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石B</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_c.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石C</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_d.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石D</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl part">
+                        <div class="fl padding20">
+                            <div class="war_head b_inherit">
+                                <img width="30" src="../images/robot_engineer2.png">
+                            </div>
+                            <span class="db tc pd3">躯干</span>
+                            <div class="work_btn">
+                                <button class="i_work_btn">加工</button>
+                            </div>
+                        </div>
+                        <div class="fl" style="width: 90px;margin-left: 10px;">
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_a.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石A</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_b.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石B</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_c.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石C</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_d.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石D</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl part">
+                        <div class="fl padding20">
+                            <div class="war_head b_inherit">
+                                <img width="16" src="../images/robot_engineer3.png">
+                            </div>
+                            <span class="db tc pd3">四肢</span>
+                            <div class="work_btn">
+                                <button class="i_work_btn">加工</button>
+                            </div>
+                        </div>
+                        <div class="fl" style="width: 90px;margin-left: 10px;">
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_a.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石A</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_b.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石B</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_c.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石C</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_d.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石D</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="medical work_robot">
+                    <div class="fl full b_inherit">
+                        <img class="mt25" width="90" src="../images/robot_medical.png">
+                    </div>
+                    <div class="fl part">
+                        <div class="fl padding20">
+                            <div class="war_head b_inherit">
+                                <img width="55" src="../images/robot_medical1.png">
+                            </div>
+                            <span class="db tc pd3">头部</span>
+                            <div class="work_btn">
+                                <button class="i_work_btn">加工</button>
+                            </div>
+                        </div>
+                        <div class="fl" style="width: 90px;margin-left: 10px;">
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_a.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石A</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_b.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石B</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_c.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石C</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_d.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石D</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl part">
+                        <div class="fl padding20">
+                            <div class="war_head b_inherit">
+                                <img width="30" src="../images/robot_medical2.png">
+                            </div>
+                            <span class="db tc pd3">躯干</span>
+                            <div class="work_btn">
+                                <button class="i_work_btn">加工</button>
+                            </div>
+                        </div>
+                        <div class="fl" style="width: 90px;margin-left: 10px;">
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_a.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石A</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_b.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石B</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_c.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石C</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_d.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石D</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl part">
+                        <div class="fl padding20">
+                            <div class="war_head b_inherit">
+                                <img width="16" src="../images/robot_medical3.png">
+                            </div>
+                            <span class="db tc pd3">四肢</span>
+                            <div class="work_btn">
+                                <button class="i_work_btn">加工</button>
+                            </div>
+                        </div>
+                        <div class="fl" style="width: 90px;margin-left: 10px;">
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_a.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石A</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_b.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石B</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_c.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石C</span>
+
+                            </div>
+                            <div class="fl work_mineral_h">
+                                <div class="work_mineral">
+                                    <img width="35" src="../images/i_mineral_d.png">
+                                    <span class="mineral_num">5(4)</span>
+                                </div>
+                                <span class="pd3">矿石D</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="area asset" style="display: none" >
+                <div class="top">
+                    <div class="fl">矿石：</div>
+                    <div class="fl">
+                        <div class="asset_mineral">
+                            <span class="db tr mineral_value">300</span>
+                            <img width="39" src="../images/i_mineral_a.png">
+                            <span class="db" style="margin-top: -5px;">矿石A</span>
+                        </div>
+                        <div class="i_sale i_sale_asset">出售</div>
+                    </div>
+                    <div class="fl">
+                        <div class="asset_mineral">
+                            <span class="db tr mineral_value">300</span>
+                            <img  width="57" src="../images/i_mineral_b.png">
+                            <span class="db">矿石B</span>
+                        </div>
+                        <div class="i_no_sale i_sale_asset" data-name="售卖矿石B" data-popup="sale">出售</div>
+                    </div>
+                    <div class="fl">
+                        <div class="asset_mineral">
+                            <span class="db tr mineral_value">300</span>
+                            <img style="margin: 3px 0;" width="47" src="../images/i_mineral_c.png">
+                            <span class="db">矿石C</span>
+                        </div>
+                        <div class="i_sale i_sale_asset cd-popup-trigger0" data-name="售卖矿石C" data-popup="sale">出售</div>
+                    </div>
+                    <div class="fl">
+                        <div class="asset_mineral">
+                            <span class="db tr mineral_value">300</span>
+                            <img width="45" src="../images/i_mineral_d.png">
+                            <span class="db">矿石D</span>
+                        </div>
+                        <div class="i_sale i_sale_asset">出售</div>
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+                <div class="bot">
+                    <div class="fl">零件：</div>
+                    <div class="fl">
+                        <div>
+                            <div class="fl">
+                                <div class="asset_mineral">
+                                    <img width="50" src="../images/robot_war.png">
+                                </div>
+                                <span class="db tc mt3">战争机器人</span>
+                            </div>
+                            <div class="fl">
+                                <div class="asset_mineral">
+                                    <span class="db tr mineral_value">300</span>
+                                    <img  width="57" src="../images/robot_war1.png">
+                                    <span class="db">头部</span>
+                                </div>
+                                <div class="i_sale i_sale_asset">出售</div>
+                            </div>
+                            <div class="fl">
+                                <div class="asset_mineral">
+                                    <span class="db tr mineral_value">300</span>
+                                    <img width="31" src="../images/robot_war2.png">
+                                    <span class="db">躯干</span>
+                                </div>
+                                <div class="i_sale i_sale_asset">出售</div>
+                            </div>
+                            <div class="fl">
+                                <div class="asset_mineral">
+                                    <span class="db tr mineral_value">300</span>
+                                    <img width="17" src="../images/robot_war3.png">
+                                    <span class="db">四肢</span>
+                                </div>
+                                <div class="i_sale i_sale_asset">出售</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="fl">
+                                <div class="asset_mineral">
+                                    <img width="70" src="../images/robot_engineer.png">
+                                </div>
+                                <span class="db tc mt3">工程机器人</span>
+                            </div>
+                            <div class="fl">
+                                <div class="asset_mineral">
+                                    <span class="db tr mineral_value">300</span>
+                                    <img  width="57" src="../images/robot_engineer1.png">
+                                    <span class="db">头部</span>
+                                </div>
+                                <div class="i_sale i_sale_asset cd-popup-trigger0" data-name="售卖工程机器人头部" data-popup="sale">出售</div>
+                            </div>
+                            <div class="fl">
+                                <div class="asset_mineral">
+                                    <span class="db tr mineral_value">300</span>
+                                    <img width="31" src="../images/robot_engineer2.png">
+                                    <span class="db">躯干</span>
+                                </div>
+                                <div class="i_sale i_sale_asset">出售</div>
+                            </div>
+                            <div class="fl">
+                                <div class="asset_mineral">
+                                    <span class="db tr mineral_value">300</span>
+                                    <img width="17" src="../images/robot_engineer3.png">
+                                    <span class="db">四肢</span>
+                                </div>
+                                <div class="i_sale i_sale_asset">出售</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="fl">
+                                <div class="asset_mineral">
+                                    <img width="68" src="../images/robot_medical.png">
+                                </div>
+                                <span class="db tc mt3">医疗机器人</span>
+                            </div>
+                            <div class="fl">
+                                <div class="asset_mineral">
+                                    <span class="db tr mineral_value">300</span>
+                                    <img  width="57" src="../images/robot_medical1.png">
+                                    <span class="db">头部</span>
+                                </div>
+                                <div class="i_sale i_sale_asset">出售</div>
+                            </div>
+                            <div class="fl">
+                                <div class="asset_mineral">
+                                    <span class="db tr mineral_value">300</span>
+                                    <img width="31" src="../images/robot_medical2.png">
+                                    <span class="db">躯干</span>
+                                </div>
+                                <div class="i_sale i_sale_asset">出售</div>
+                            </div>
+                            <div class="fl">
+                                <div class="asset_mineral">
+                                    <span class="db tr mineral_value">300</span>
+                                    <img width="17" src="../images/robot_medical3.png">
+                                    <span class="db">四肢</span>
+                                </div>
+                                <div class="i_sale i_sale_asset">出售</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="area blacksmith" style="display: none;">
+                <span class="i_tip_blacksmith i_tip" onclick="showTip(this)"></span>
+                <div class="upgrade_tip" style="display: none;">
+                    <div>一级，消耗增加30%</div>
+                    <div>二级，消耗增加15%。</div>
+                    <div>三级，消耗增加0%。</div>
+                    <div>四级，消耗减少15%。</div>
+                    <div>五级，消耗减少30%。</div>
+                </div>
+                <div class="top">
+                    <div class="fl">
+                        <img width="190" src="../images/blacksmith.png">
+                    </div>
+                    <div class="fl i_tip_bg">
+                        <div style="width: 109px;height: 120px;margin-left: 116px;margin-top: 80px;line-height: 30px;">
+                            <span class="db">目前等级：1级</span>
+                            <span class="db">材料消耗：+30%</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bot">
+                    <p>需要￥1234元升级到下一级</p>
+                    <button class="i_sub_btn"><span class="i_upgrade"></span>升级</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="item ml10 item_right ps_re" style="width: 500px;">
+            <div class="top">
+                <div class="title">
+                    比赛日志
+                </div>
+                <div class="list game_log">
+                    <ul class="tabs">
+                        <li class="active"><a href="#tab1">酒馆</a></li>
+                        <li><a href="#tab2">经营</a></li>
+                        <li><a href="#tab3">交易</a></li>
+                    </ul>
+                    <div class="tab_container">
+                        <div id="tab1" class="tab_content" style="display: block; ">
+                            <div class="msg_list">
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">运营</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">交易</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">酒馆</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">运营</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">交易</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">酒馆</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tab2" class="tab_content" style="display: none; ">
+                            <div class="msg_list">
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">运营</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">交易</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">酒馆</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">运营</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab3" class="tab_content" style="display: none; ">
+                            <div class="msg_list">
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">运营</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                            <span class="common_border">同意</span><span class="common_border">拒绝</span>
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">交易</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="send_msg work_send_msg">
+                <textarea class="fl"></textarea>
+                <button class="fl">发送</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--弹框-->
+<div class="cd-popup sale">
+    <div class="cd-popup-container">
+        <div class='p_title'>售卖医疗机器人头部</div>
+        <div class="p_list p_sale">
+            <div class="sale_input">
+                <span>买方：</span>
+                <input type="text" placeholder="请输入买方"/>
+            </div>
+            <div class="sale_input">
+                <span>数量：</span>
+                <input type="text" placeholder="请输入数量"/>
+            </div>
+            <div class="sale_input">
+                <span>价格：</span>
+                <input type="text" placeholder="请输入价格"/>
+            </div>
+        </div>
+        <div class="sub_btn i_sub_btn">提交</div>
+        <a href="#0" class="cd-popup-close"></a>
+    </div>
+</div>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/player.js"></script>
+<script>
+    $(document).ready(function() {
+        //Default Action
+        $(".tab_content").hide(); //Hide all content
+        $("ul.tabs li:first").addClass("active").show(); //Activate first tab
+        $(".tab_content:first").show(); //Show first tab content
+
+        //On Click Event
+        $("ul.tabs li").click(function () {
+            $("ul.tabs li").removeClass("active"); //Remove any "active" class
+            $(this).addClass("active"); //Add "active" class to selected tab
+            $(".tab_content").hide(); //Hide all tab content
+            var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+            $(activeTab).fadeIn(); //Fade in the active content
+            return false;
+        });
+        $(".nav_3 .nav_menu").on("click",function(){
+            var area = $(this).data('area');
+            for(var i=0;i<$(this).siblings().length;i++){
+                $($(this).siblings()[i]).removeClass("active");
+            }
+            for(var i=0;i<$('.area').length;i++){
+                $($('.area')[i]).css("display","none");
+            }
+            $(this).addClass("active");
+            $("."+area).css("display","block");
+        })
+    })
+</script>
+</body>
+</html>

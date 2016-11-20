@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>采矿业</title>
+    <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+<div class="main">
+    <div class="logout"><a>退出系统</a></div>
+    <div class="menus lh40">
+        <div class="menu-1">
+            <!--<span class="i_wallet"></span>修改机器人价格-->
+        </div>
+        <div class="menu-2 player">
+            <span>即将进入第一财年</span>
+        </div>
+        <div class="menu-3" >
+
+        </div>
+    </div>
+    <div class="nav nav_3">
+        <span class="nav_menu active" data-area="workshop">比赛地图</span>
+        <span class="nav_menu" data-area="asset">固定资产</span>
+        <span class="nav_menu" data-area="blacksmith">精炼厂</span>
+        <span style="color: #fff;display: block;float: right;width: 187px; line-height: 25px;margin-top: -30px;padding-right: 15px;">
+            <span class="db">可用资金：1000 <span class="i_loan cd-popup-trigger0" data-popup="loan" data-name="资金拆借">拆借</span></span>
+            <span class="db mt10">流动资金：2000</span>
+            <span class="i_loan cd-popup-trigger0" data-name="参赛队伍" data-popup="teams">队伍</span>
+        </span>
+
+    </div>
+    <div class="content">
+        <div class="item mr10 item_left land_area ps_re" style="width: 529px;padding:0">
+            <div class="area workshop" style="background: #fff;">
+                <div class="top">
+                    <div class="land_tip">
+                        <span class="land land_as_i ml25"></span>&nbsp;未开采
+                    </div>
+                    <div class="land_tip">
+                        <span class="land_other_2 land_as_i"></span>&nbsp;他人开采
+                    </div>
+                    <div class="land_tip">
+                        <span class="land_other_1 land_as_i"></span>&nbsp;他人勘探
+                    </div>
+                    <div class="land_tip">
+                        <span class="land_me_2 land_as_i"></span>&nbsp;我的开采
+                    </div>
+                    <div class="land_tip">
+                        <span class="land_me_1 land_as_i"></span>&nbsp;我的勘探
+                    </div>
+                </div>
+                <div class="bot ps_re" style="width:600px;height: 390px;overflow: hidden;">
+                    <div class="i_arrow_left" onclick="goLeft()"></div>
+                    <div class="i_arrow_right" onclick="goRight()"></div>
+                    <table id="land_table" cellpadding="0" style="width: 1805px;position: absolute">
+                        <tr>
+                            <td class="land_other_1"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land_me_1"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land_me_1"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land_me_1"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land_me_1"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land_me_1"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land_me_1"></td>
+                        </tr>
+                        <tr>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land_me_1"></td>
+                        </tr>
+                        <tr>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land_me_1"></td>
+                        </tr>
+                        <tr>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land_me_1"></td>
+                        </tr>
+                        <tr>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land_me_1"></td>
+                        </tr>
+                        <tr>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land_me_1"></td>
+                        </tr>
+                        <tr>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land_me_1"></td>
+                        </tr>
+                        <tr>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land_me_1"></td>
+                        </tr>
+                        <tr>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land_me_1"></td>
+                        </tr>
+                        <tr>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land_me_1"></td>
+                        </tr>
+                        <tr>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land_me_1"></td>
+                        </tr>
+                        <tr>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land"></td>
+                            <td class="land_me_2"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="area asset" style="display: none;padding: 10px;" >
+                <div class="bot" style="min-height: 120px;">
+                    <div class="fl">矿石：</div>
+                    <div class="fl">
+                        <div class="land_asset">
+                            <span class="db tr mineral_value">300</span>
+                            <img style="margin: 3px 0;" width="28" src="../images/i_mineral_a.png">
+                            <span class="db">矿石A</span>
+                        </div>
+                        <div class="i_sale i_sale_asset cd-popup-trigger0" data-name="售卖矿石A" data-popup="sale">出售</div>
+                    </div>
+                    <div class="fl">
+                        <div class="land_asset">
+                            <span class="db tr mineral_value">300</span>
+                            <img style="margin: 3px 0;" width="47" src="../images/i_mineral_b.png">
+                            <span class="db">矿石B</span>
+                        </div>
+                        <div class="i_sale i_sale_asset cd-popup-trigger0" data-name="售卖矿石B" data-popup="sale">出售</div>
+                    </div>
+                    <div class="fl">
+                        <div class="land_asset">
+                            <span class="db tr mineral_value">300</span>
+                            <img style="margin: 3px 0;" width="47" src="../images/i_mineral_c.png">
+                            <span class="db">矿石C</span>
+                        </div>
+                        <div class="i_sale i_sale_asset cd-popup-trigger0" data-name="售卖矿石C" data-popup="sale">出售</div>
+                    </div>
+                    <div class="fl">
+                        <div class="land_asset">
+                            <span class="db tr mineral_value">300</span>
+                            <img style="margin: 3px 0;" width="42" src="../images/i_mineral_d.png">
+                            <span class="db">矿石D</span>
+                        </div>
+                        <div class="i_sale i_sale_asset cd-popup-trigger0" data-name="售卖矿石D" data-popup="sale">出售</div>
+                    </div>
+
+                </div>
+                <div class="bot">
+                    <div class="fl">地块：</div>
+                    <div class="fl" style="margin-left: 41px;">
+                        <div class="fl">
+                            <div class=" land_asset mg20">
+                                <span class="db tr land_value">未开采</span>
+                                <img  width="57" src="../images/store_1.png">
+                                <span class="db">地块（12,34）</span>
+                            </div>
+                            <div class="i_sale i_sale_asset cd-popup-trigger0" data-popup="sale_land" data-name="转让地块（12,34）">出售</div>
+                        </div>
+                        <div class="fl">
+                            <div class=" land_asset mg20">
+                                <span class="db tr land_value">已开采</span>
+                                <img  width="57" src="../images/store_2.png">
+                                <span class="db">地块（12,34）</span>
+                            </div>
+                            <div class="i_no_sale i_sale_asset land_asset_btn">出售</div>
+                        </div>
+                        <div class="fl">
+                            <div class=" land_asset mg20">
+                                <span class="db tr land_value">未开采</span>
+                                <img  width="57" src="../images/store_1.png">
+                                <span class="db">地块（12,78）</span>
+                            </div>
+                            <div class="i_sale i_sale_asset land_asset_btn cd-popup-trigger0"data-popup="sale_land" data-name="转让地块（12,78）">出售</div>
+                        </div>
+                        <div class="fl">
+                            <div class=" land_asset mg20">
+                                <span class="db tr land_value">未开采</span>
+                                <img  width="57" src="../images/store_1.png">
+                                <span class="db">地块（12,34）</span>
+                            </div>
+                            <div class="i_sale i_sale_asset land_asset_btn">出售</div>
+                        </div>
+                        <div class="fl">
+                            <div class=" land_asset mg20">
+                                <span class="db tr land_value">未开采</span>
+                                <img  width="57" src="../images/store_1.png">
+                                <span class="db">地块（12,34）</span>
+                            </div>
+                            <div class="i_sale i_sale_asset land_asset_btn">出售</div>
+                        </div>
+                        <div class="fl">
+                            <div class=" land_asset mg20">
+                                <span class="db tr land_value">未开采</span>
+                                <img  width="57" src="../images/store_1.png">
+                                <span class="db">地块（12,34）</span>
+                            </div>
+                            <div class="i_sale i_sale_asset land_asset_btn">出售</div>
+                        </div>
+                        <div class="fl">
+                            <div class=" land_asset mg20">
+                                <span class="db tr land_value">已开采</span>
+                                <img  width="57" src="../images/store_2.png">
+                                <span class="db">地块（12,34）</span>
+                            </div>
+                            <div class="i_no_sale i_sale_asset land_asset_btn">出售</div>
+                        </div>
+                        <div class="fl">
+                            <div class=" land_asset mg20">
+                                <span class="db tr land_value">未开采</span>
+                                <img  width="57" src="../images/store_1.png">
+                                <span class="db">地块（12,34）</span>
+                            </div>
+                            <div class="i_sale i_sale_asset land_asset_btn">出售</div>
+                        </div>
+                        <div class="fl">
+                            <div class=" land_asset mg20">
+                                <span class="db tr land_value">未开采</span>
+                                <img  width="57" src="../images/store_1.png">
+                                <span class="db">地块（12,34）</span>
+                            </div>
+                            <div class="i_sale i_sale_asset land_asset_btn">出售</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="area blacksmith" style="display: none;">
+                <span class="i_tip_blacksmith i_tip" onclick="showTip(this)"></span>
+                <div class="upgrade_tip" style="display: none;">
+                    <div>一级，消耗增加30%</div>
+                    <div>二级，消耗增加15%。</div>
+                    <div>三级，消耗增加0%。</div>
+                    <div>四级，消耗减少15%。</div>
+                    <div>五级，消耗减少30%。</div>
+                </div>
+                <div class="mine">
+                    <div class="fl">
+                        <img width="190" src="../images/mine.png">
+                    </div>
+                    <div class="fl i_tip_bg">
+                        <div style="width: 200px;height: 120px;margin-left: 90px;margin-top:45px;line-height: 30px;">
+                            <span class="db">目前等级：1级</span>
+                            <span class="db">开采速度：1片区域/年</span>
+                            <span class="db">开采数量：为最大量的1/6-2/6</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bot">
+                    <p>需要￥1234元升级到下一级</p>
+                    <button class="i_sub_btn"><span class="i_upgrade"></span>升级</button>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="item ml10 item_right ps_re" style="width: 500px;">
+            <div class="top">
+                <div class="title">
+                    比赛日志
+                </div>
+                <div class="list game_log">
+                    <ul class="tabs">
+                        <li class="active"><a href="#tab1">酒馆</a></li>
+                        <li><a href="#tab2">经营</a></li>
+                        <li><a href="#tab3">交易</a></li>
+                    </ul>
+                    <div class="tab_container">
+                        <div id="tab1" class="tab_content" style="display: block; ">
+                            <div class="msg_list">
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">运营</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">交易</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">酒馆</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">运营</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">交易</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">酒馆</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tab2" class="tab_content" style="display: none; ">
+                            <div class="msg_list">
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">运营</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">交易</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">酒馆</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">运营</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab3" class="tab_content" style="display: none; ">
+                            <div class="msg_list">
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">运营</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                            <span class="common_border">同意</span><span class="common_border">拒绝</span>
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                                <div class="msg">
+                                    <div class="msg_detail">
+                                        <p>
+                                            <span class="msg_tag">交易</span>tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容tab标签，
+                                            jquery ajax载入数据库的内容tab标签，jquery ajax载入数据库的内容
+                                        </p>
+                                    </div>
+                                    <div class="msg_time">第一财年 17:26</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="send_msg work_send_msg">
+                <textarea class="fl"></textarea>
+                <button class="fl">发送</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--弹框-->
+<!--查看参赛队伍-->
+<div class="cd-popup teams">
+    <div class="cd-popup-container" style="width: 600px;">
+        <div class='p_title'>参赛队伍</div>
+        <div class="industry" style="margin: 0;">
+            <div class="industry_item team_name">
+                <div class="industry_title update_jq_title">采矿行业</div>
+                <div>
+                    <table  cellpadding="0" cellspacing="0">
+                        <thead class="update_jq_thead">
+                        <tr>
+                            <th class="th1">队伍名</th>
+                        </tr>
+                        </thead>
+                        <tbody class="update_jq_tr">
+                            <tr><td>队伍名可能很长哦哦哦哦哦队伍名可能很长哦哦哦哦哦</td></tr>
+                            <tr><td>队伍名可能很长哦哦哦哦哦</td></tr>
+                            <tr><td>队伍名可能很长哦哦哦哦哦</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="industry_item team_name">
+                <div class="industry_title update_jq_title">加工行业</div>
+                <div>
+                    <table  cellpadding="0" cellspacing="0">
+                        <thead class="update_jq_thead">
+                        <tr>
+                            <th class="th1">队伍名</th>
+                        </tr>
+                        </thead>
+                        <tbody class="update_jq_tr">
+                            <tr><td>队伍名可能很长哦哦哦哦哦</td></tr>
+                            <tr><td>队伍名可能很</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="industry_item team_name">
+                <div class="industry_title update_jq_title">制造行业</div>
+                <div>
+                    <table  cellpadding="0" cellspacing="0">
+                        <thead class="update_jq_thead">
+                        <tr>
+                            <th class="th1">队伍名</th>
+                        </tr>
+                        </thead>
+                        <tbody class="update_jq_tr">
+                            <tr><td>队伍名可能很长哦哦哦哦哦</td></tr>
+                            <tr><td>队伍名可能很长哦哦哦哦哦</td></tr>
+                            <tr><td>队伍名可能很长哦哦哦哦哦</td></tr>
+                            <tr><td>队伍名可能很长哦哦哦哦哦</td></tr>
+                            <tr><td>队伍名可能很长哦哦哦哦哦</td></tr>
+                            <tr><td>队伍名可能很长哦哦哦哦哦</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <a href="#0" class="cd-popup-close"></a>
+    </div>
+</div>
+<!--拆借-->
+<div class="cd-popup loan">
+    <div class="cd-popup-container">
+        <div class='p_title'>资金拆借</div>
+        <div class="p_list p_sale">
+            <div class="sale_input">
+                <span>拆入方：</span>
+                <input type="text" placeholder="请输入拆入方"/>
+            </div>
+            <div class="sale_input">
+                <span>金额：</span>
+                <input style="margin-left: 11px;" type="text" placeholder="请输入金额"/>
+            </div>
+            <div class="sale_input">
+                <span>利息：</span>
+                <input style="margin-left: 11px;" type="text" placeholder="请输入利息"/>
+            </div>
+        </div>
+        <div class="sub_btn i_sub_btn">提交</div>
+        <a href="#0" class="cd-popup-close"></a>
+    </div>
+</div>
+<!--售卖矿石-->
+<div class="cd-popup sale">
+    <div class="cd-popup-container">
+        <div class='p_title'>售卖矿石</div>
+        <div class="p_list p_sale">
+            <div class="sale_input">
+                <span>买方：</span>
+                <input type="text" placeholder="请输入买方"/>
+            </div>
+            <div class="sale_input">
+                <span>数量：</span>
+                <input type="text" placeholder="请输入数量"/>
+            </div>
+            <div class="sale_input">
+                <span>价格：</span>
+                <input type="text" placeholder="请输入价格"/>
+            </div>
+        </div>
+        <div class="sub_btn i_sub_btn">提交</div>
+        <a href="#0" class="cd-popup-close"></a>
+    </div>
+</div>
+<!--转让地块-->
+<div class="cd-popup sale_land">
+    <div class="cd-popup-container">
+        <div class='p_title'>转让地块</div>
+        <div class="p_list p_sale">
+            <div class="sale_input">
+                <span>买方：</span>
+                <input type="text" placeholder="请输入买方"/>
+            </div>
+            <div class="sale_input">
+                <span>价格：</span>
+                <input type="text" placeholder="请输入价格"/>
+            </div>
+        </div>
+        <div class="sub_btn i_sub_btn">提交</div>
+        <a href="#0" class="cd-popup-close"></a>
+    </div>
+</div>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/player.js"></script>
+<script>
+    $(document).ready(function() {
+        //Default Action
+        $(".tab_content").hide(); //Hide all content
+        $("ul.tabs li:first").addClass("active").show(); //Activate first tab
+        $(".tab_content:first").show(); //Show first tab content
+
+        //On Click Event
+        $("ul.tabs li").click(function () {
+            $("ul.tabs li").removeClass("active"); //Remove any "active" class
+            $(this).addClass("active"); //Add "active" class to selected tab
+            $(".tab_content").hide(); //Hide all tab content
+            var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+            $(activeTab).fadeIn(); //Fade in the active content
+            return false;
+        });
+        $(".nav_3 .nav_menu").on("click",function(){
+            var area = $(this).data('area');
+            for(var i=0;i<$(this).siblings().length;i++){
+                $($(this).siblings()[i]).removeClass("active");
+            }
+            for(var i=0;i<$('.area').length;i++){
+                $($('.area')[i]).css("display","none");
+            }
+            $(this).addClass("active");
+            $("."+area).css("display","block");
+        })
+    })
+</script>
+</body>
+</html>
